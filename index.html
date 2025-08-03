@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <!-- Sets the character encoding for the document -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Ensures the page is responsive on all devices -->
+        
+        <meta name="description" content="Simple Weather App using OpenWeatherMap API">
+        <!-- Description for SEO and accessibility -->
+        
+        <title>Weather App</title>
+        <!-- Title of the web page that appears on the browser tab -->
+        
+        <link rel="stylesheet" href="index.css">
+        <!-- Link to external CSS file for styling -->
+    </head>
+
+    <body>
+
+        <main> 
+            <!-- Main content area of the page -->
+
+            <h1> Weather </h1>
+            <!-- Page heading -->
+
+            <div class="search-container">
+                <!-- Container for input and button -->
+
+                <input type="text" id="city" placeholder="cityname" aria-label="City name">
+                <!-- Text input for user to enter city name -->
+
+                <button id="getWeather" type="button"> Get Weather </button>
+                <!-- Button to trigger fetching of weather info -->
+
+                <div id="output" aria-live="polite"></div>
+                <!-- Div to display weather information output -->
+
+            </div>
+            
+        </main>
+
+        <script src="./index.js"></script>
+        <!-- Link to external JavaScript file for functionality -->
+
+    </body>
+</html>
